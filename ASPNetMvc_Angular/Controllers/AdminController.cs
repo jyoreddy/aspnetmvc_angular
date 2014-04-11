@@ -23,5 +23,9 @@ namespace AngularStart1.Controllers
         {
             return View();
         }
+        public ActionResult Dashboard()
+        {
+            return View();
+        }
     }
 }

@@ -7,9 +7,9 @@ adminRoot
         //Setup routes to load partial templates from server. TemplateUrl is the location for the server view (Razor .cshtml view)
         $routeProvider
             .when('/admin', { templateUrl: '/admin/main', controller: 'AdminMainController' })
-            .when('/test2', { templateUrl: '/admin/test2', controller: 'ContactController' })
-            //.when('/about', { templateUrl: '/home/about', controller: 'AboutController' })
-            //.when('/demo', { templateUrl: '/home/demo', controller: 'DemoController' })
+            .when('/test2', { templateUrl: '/admin/test2', controller: 'AdminMainController' })
+            .when('/test1', { templateUrl: '/admin/test2', controller: 'AdminMainController' })
+            .when('/dashboard', { templateUrl: '/admin/dashboard', controller: 'AdminMainController' })
             //.when('/angular', { templateUrl: '/home/angular' })
             //.when('/account', { templateUrl: '/account/test', controller: 'AccountController' })
             .otherwise({ redirectTo: '/admin' });
